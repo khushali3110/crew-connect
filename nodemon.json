@@ -1,0 +1,19 @@
+{
+  "exec": "next dev",
+  "watch": [
+    "app",
+    "components",
+    "data",
+    "lib",
+    "public",
+    "next.config.mjs",
+    "tailwind.config.js"
+  ],
+  "ext": "js,jsx,ts,tsx,json,css,mjs",
+  "ignore": [
+    ".next",
+    "backend",
+    "node_modules"
+  ],
+  "delay": "300"
+}

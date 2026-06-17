@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Corporate Events",
+    "copy": "Polished receptionists, executive assistants, and logistics managers for high-stakes business gatherings.",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    "badge": "Tier 1 Elite",
+    "action": "Join Our Team for Corporate",
+    "sector": "corporate"
+  },
+  {
+    "title": "Weddings",
+    "copy": "Seamless hospitality staff and dedicated event coordinators ensuring the perfect day for every couple.",
+    "image": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Weddings",
+    "sector": "weddings"
+  },
+  {
+    "title": "Conferences",
+    "copy": "Registration experts, AV technicians, and stage managers for large-scale professional symposiums.",
+    "image": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Conferences",
+    "sector": "conferences"
+  },
+  {
+    "title": "Trade Shows",
+    "copy": "Engaging brand ambassadors and sales-focused booth staff to maximize lead generation.",
+    "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Trade Shows",
+    "sector": "trade-shows"
+  },
+  {
+    "title": "Concerts",
+    "copy": "Experienced stagehands, security teams, and VIP hospitality crew for world-class musical tours.",
+    "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Concerts",
+    "sector": "concerts"
+  },
+  {
+    "title": "Festivals",
+    "copy": "Full-scale logistics and site crews capable of managing high-density multi-day outdoor events.",
+    "image": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Festivals",
+    "sector": "festivals"
+  },
+  {
+    "title": "Sports Events",
+    "copy": "Ushering, ticketing, and premium box hospitality staff trained for the fast-paced sports industry.",
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Sports",
+    "sector": "sports"
+  },
+  {
+    "title": "Product Launches",
+    "copy": "High-energy promoters and technical experts who understand the value of brand perception.",
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Launches",
+    "sector": "launches"
+  },
+  {
+    "title": "Retail Promotions",
+    "copy": "Sales-driven experiential staff who turn store visitors into loyal brand advocates.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80",
+    "action": "Join Our Team for Retail",
+    "sector": "retail"
+  }
+]

@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  max-width: 100%;
+  min-width: 0;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main,
+section,
+article,
+aside,
+header,
+footer,
+nav,
+div {
+  min-width: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button {
+  overflow-wrap: break-word;
+}
+
+@layer utilities {
+  .fluid-page-title {
+    font-size: clamp(2.25rem, 7vw, 4.5rem);
+    line-height: 1.04;
+  }
+
+  .fluid-section-title {
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.08;
+  }
+
+  .fluid-card-title {
+    font-size: clamp(1.15rem, 3.5vw, 1.5rem);
+    line-height: 1.15;
+  }
+
+  .fluid-copy {
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    line-height: 1.75;
+  }
+
+  main > section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  main > section > div {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  @media (min-width: 640px) {
+    main > section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    main > section > div {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    main > section {
+      padding-top: 3.5rem !important;
+      padding-bottom: 3.5rem !important;
+    }
+
+    main > section > div {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+  }
+
+  main > .contact-tight {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  main > .contact-tight > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  @media (min-width: 640px) {
+    main > .contact-tight {
+      padding-top: 2.25rem !important;
+      padding-bottom: 2.25rem !important;
+    }
+
+    main > .contact-tight > div {
+      padding-left: 1.25rem !important;
+      padding-right: 1.25rem !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    main > .contact-tight {
+      padding-top: 2.5rem !important;
+      padding-bottom: 2.5rem !important;
+    }
+
+    main > .contact-tight > div {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+}

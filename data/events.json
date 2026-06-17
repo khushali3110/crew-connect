@@ -1,0 +1,306 @@
+[
+  {
+    "title": "Global Tech Summit 2024",
+    "slug": "global-tech-summit",
+    "city": "London, UK",
+    "venue": "Excel London Center",
+    "address": "Excel London, Royal Victoria Dock, London E16",
+    "date": "Oct 12-15, 2024",
+    "startDate": "Oct 12, 2024",
+    "duration": "5 Days",
+    "rate": "£45.00",
+    "tags": ["Event Operations", "AV & Tech Setup", "Crisis Management", "Leadership"],
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1800&q=80",
+    "featured": true,
+    "category": "AI & Blockchain",
+    "company": "Nexus Events Group",
+    "companyRating": "4.9",
+    "companyTier": "Tier 1 Agency",
+    "companyImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+    "companyBio": "Nexus is a premier global event production firm known for high-tech innovation summits and luxury brand launches.",
+    "tagline": "Coordinate high-stakes logistics for a 5,000+ attendee innovation conference in the heart of London.",
+    "vision": "The Global Tech Summit 2024 is set to be the premier gathering for AI and blockchain innovators across Europe. With over 5,000 attendees expected, including industry leaders, investors, and tier-1 media, the production quality must be flawless.\n\nWe are transforming the Excel London Center into a futuristic hub, featuring a 360-degree LED main stage, 15 breakout rooms equipped for global livestreaming, and a VIP lounge designed for high-stakes networking. This production demands a crew capable of executing complex logistics under pressure.",
+    "positions": [
+      {
+        "title": "Lead Event Coordinator",
+        "description": "Manage end-to-end onsite logistics, direct a team of 15 crew members, and act as primary contact for VIPs.",
+        "rate": "£450",
+        "rateUnit": "Day",
+        "openings": 1
+      },
+      {
+        "title": "Stage Manager",
+        "description": "Coordinate transitions on the 360-degree main stage, liaise with speakers, and ensure strict adherence to the run-of-show.",
+        "rate": "£380",
+        "rateUnit": "Day",
+        "openings": 2
+      },
+      {
+        "title": "Floor Host / Guest Relations",
+        "description": "Provide premium concierge services in the VIP lounge and ensure smooth crowd flow across the expo floor.",
+        "rate": "£250",
+        "rateUnit": "Day",
+        "openings": 8
+      },
+      {
+        "title": "AV Technician",
+        "description": "Manage audio/visual setup for breakout rooms and monitor global livestream feeds.",
+        "rate": "£320",
+        "rateUnit": "Day",
+        "openings": 4
+      }
+    ],
+    "otherEvents": [
+      { "title": "Future Tech Summit 2024", "category": "Technology", "city": "San Francisco", "slug": "future-tech-summit", "daysAway": "Starts soon" },
+      { "title": "Global Media Expo", "category": "Media", "city": "Los Angeles", "slug": "global-media-expo", "daysAway": "Next month" }
+    ]
+  },
+  {
+    "title": "Future Tech Summit 2024",
+    "slug": "future-tech-summit",
+    "subTitle": "Tech Summit 2024",
+    "city": "San Francisco, CA",
+    "venue": "Moscone Center West",
+    "address": "Moscone Center West, 800 Howard St, San Francisco, CA 94103",
+    "date": "Oct 12-15, 2024",
+    "startDate": "Oct 12, 2024",
+    "duration": "4 Days",
+    "rate": "$45.00",
+    "contractType": "Full Event",
+    "staffNeeded": "12 Members",
+    "tags": ["Event Management", "Crisis Resolution", "Team Leadership", "Fluent English"],
+    "skills": ["Event Management", "Crisis Resolution", "Team Leadership", "Fluent English"],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCsQrEhuSA6Jv8bRa7RCfadbSZWPMgrfRkg4N6_b_HdG7OLQyMxh1qkB0LckZsV32K2KJdDkLa0zw0VjwGxVhsiwd3H6gZlWkGO9CFagwO2SdD66rT1Fl17zZtwb5aFA_yqWPeYOfwXBvXL7lpJadm2cZRSR8O_CNEVacgpVOVVUfYFJ8DcDnKni1xuyYVLoQC8aBkzwx_hlTYFw_Np4okhJKlG3aBuzMynkdYRHyl4-zNxYXyy3RkFe9eESN8GYkRq3tY4kXhe6HnL",
+    "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBIE6eAv8nYBkmPT5uDN8Itf-CU9uHyzOrSVYgBoR7MTecL3Fd5xhw89CnRdESF4msam3OmvpFCrqt38bF3_NnypjM3eaIn5c_326pUVX1AvcGeNjBCr42mQF3nNpdTNxIe2I-Bmcj1-l1AFQlArAUMamGzwubUh09E-WjZrMQoGznYp1wfALilO5VamL0VkkZcpq-CmcEZfpT1x2Za5HBqJlVBXT6kIzPsEPovsTWV5rX2lrhBZSCF2--IFEphI4KDMOUpkCprqGzU",
+    "mapAddress": "Moscone Center West, 800 Howard St, San Francisco, CA 94103",
+    "featured": false,
+    "category": "Technology",
+    "company": "Nexus Events Group",
+    "companyRating": "4.9",
+    "companyTier": "Tier 1 Agency",
+    "companyImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+    "companyBio": "Nexus is a premier global event production firm known for high-tech innovation summits and luxury brand launches.",
+    "tagline": "Support Silicon Valley's flagship technology summit with polished floor management and VIP coordination.",
+    "vision": "Tech Summit 2024 is the premier gathering for innovation and software engineering in Silicon Valley. With over 15,000 attendees expected, we are looking for a highly organized Floor Manager to oversee registration, vendor relations, and attendee flow during our four-day flagship conference. Our teams will manage high-stakes transitions and VIP speaker logistics across multiple parallel tracks.",
+    "responsibilities": [
+      "Oversee a team of 45 registration staff and event ambassadors.",
+      "Coordinate with logistics and catering teams for on-time delivery.",
+      "Real-time troubleshooting of attendee access and badge issues.",
+      "Maintain high safety standards and crowd control protocols."
+    ],
+    "positions": [
+      {
+        "title": "Floor Manager",
+        "description": "Oversee registration, vendor relations, attendee flow, and team coordination across the conference floor.",
+        "rate": "$260",
+        "rateUnit": "Day",
+        "openings": 2
+      },
+      {
+        "title": "Registration Lead",
+        "description": "Lead badge pickup, access issue handling, queue flow, and attendee support at registration.",
+        "rate": "$300",
+        "rateUnit": "Day",
+        "openings": 4
+      },
+      {
+        "title": "VIP Concierge",
+        "description": "Support VIP speaker movement, hospitality touchpoints, and executive guest coordination.",
+        "rate": "$280",
+        "rateUnit": "Day",
+        "openings": 3
+      },
+      {
+        "title": "Technical Support",
+        "description": "Assist with attendee access, session technology support, and event troubleshooting.",
+        "rate": "$240",
+        "rateUnit": "Day",
+        "openings": 3
+      }
+    ],
+    "otherEvents": [
+      { "title": "Global Tech Summit 2024", "category": "Technology", "city": "London", "slug": "global-tech-summit", "daysAway": "Starts soon" },
+      { "title": "Global Media Expo", "category": "Media", "city": "Los Angeles", "slug": "global-media-expo", "daysAway": "Next month" }
+    ]
+  },
+  {
+    "title": "Global Media Expo",
+    "slug": "global-media-expo",
+    "subTitle": "Media & Broadcast Agency",
+    "city": "Los Angeles, CA",
+    "venue": "Spring Studios LA",
+    "address": "88 Production Way, Los Angeles, CA 90028",
+    "date": "Nov 5-8, 2024",
+    "startDate": "Nov 5, 2024",
+    "duration": "4 Days",
+    "rate": "$38.00",
+    "contractType": "Shift Work",
+    "staffNeeded": "8 Members",
+    "tags": ["Broadcasting", "Customer Care", "Stage Crew Support"],
+    "skills": ["Broadcasting", "Customer Care", "Stage Crew Support"],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD0EBJ4VL5a3Q4JHeoBD0-OVBzK4bQiO7Y-JHoUqs2iXzZBfR6dKVphLOnBM7zWurdZAfaTEf7EuV2ICXNok_AXHKuXhmdGePr2gw7_juweuG-IgkHa0ZElgdcFudfxUxfDUN3F15OEPjZpQYriSYyodBpoTCQtscNCME-l8iiZyCwRIemvCw5dGDtsfXZF3NQRy20H1_mKP69mTtw_1ZI6EWTdEVBnHpigleg6d-UyJhV-_A7Fe1KtgZCNXzhMrCrghK0BdcDBs9r7",
+    "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDDl0_S78qJ7dh6OOp6pmi0NwwsNmwIzh9Nmd7TMg-j0uxn4IERyj-AlSTj1rqE0GtiOyOQrtTQRhWqU1GRT4D6f1Dvv7298ljTYEenxR5r5c9H3P0SPkOvDrJlu6bnG-R0lXxsD060kfm2sclxiE63ktfp8-WohFuakbpM8xkGfhUsRXboINCkv1Ti1-G8UDNmsfeMSPAQ2nS_vN4tE5vjcRtjHuXQRxCE9Nu0Jpq7D5QA6HPJbdjGX9WtSvLGNb0nSyjgC5FNJPvH",
+    "mapAddress": "88 Production Way, Los Angeles, CA 90028",
+    "featured": false,
+    "category": "Media",
+    "company": "Nexus Events Group",
+    "companyRating": "4.9",
+    "companyTier": "Tier 1 Agency",
+    "companyImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+    "companyBio": "Nexus is a premier global event production firm known for high-tech innovation summits and luxury brand launches.",
+    "tagline": "Support a global media and broadcast expo with registration, stagehand, and live session operations.",
+    "vision": "The Global Media Expo gathers filmmakers, content creators, and broadcast tech pioneers. We are seeking energetic registration staff and experienced stagehands to manage speaker transitions and control session timings. A background in media productions or live stage management is highly preferred.",
+    "responsibilities": [
+      "Set up broadcast gear and monitors for live panels.",
+      "Perform registration intake and badge printing.",
+      "Maintain tidy stage wings and assist speaker line-ups."
+    ],
+    "positions": [
+      {
+        "title": "A/V Technician",
+        "description": "Set up broadcast gear, monitors, and live panel support equipment before and during sessions.",
+        "rate": "$280",
+        "rateUnit": "Day",
+        "openings": 3
+      },
+      {
+        "title": "Registration Staff",
+        "description": "Perform registration intake, badge printing, and attendee support for media guests.",
+        "rate": "$220",
+        "rateUnit": "Day",
+        "openings": 3
+      },
+      {
+        "title": "Stagehand",
+        "description": "Maintain tidy stage wings, assist speaker line-ups, and support session timing control.",
+        "rate": "$240",
+        "rateUnit": "Day",
+        "openings": 2
+      }
+    ],
+    "otherEvents": [
+      { "title": "Global Tech Summit 2024", "category": "Technology", "city": "London", "slug": "global-tech-summit", "daysAway": "Starts soon" },
+      { "title": "Future Tech Summit 2024", "category": "Technology", "city": "San Francisco", "slug": "future-tech-summit", "daysAway": "Starts soon" }
+    ]
+  },
+  {
+    "title": "Wimbledon VIP Lounge",
+    "slug": "wimbledon-vip-lounge",
+    "subTitle": "Grand Slam Corporate Hospitality",
+    "city": "London, UK",
+    "venue": "All England Tennis Club",
+    "address": "Wimbledon, London SW19 5AE, United Kingdom",
+    "date": "Jul 1-14, 2024",
+    "startDate": "Jul 1, 2024",
+    "duration": "14 Days",
+    "contractType": "Multi-Day",
+    "staffNeeded": "20 Members",
+    "rate": "GBP 35.00",
+    "tags": ["Fine Dining", "Mixology", "Diplomacy", "VIP Security"],
+    "skills": ["Fine Dining", "Mixology", "Diplomacy", "VIP Security"],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnr-uQCXjF8J_Ctfozlb5on_LN58G0dLAVdcK0gnbhyd4N2mHMiCRZeUBGvtL97f3hYTs0KrM69C4ifSRueln6WlLmxq9EB_HDfaPxlF4RcSB6iqPfyyW9gMBBE-L6R62QFnA8s2J8A5BdaUOkB8AYda4BEXKvCMMKjc5mOlp_vGozmqIPjrzZ_BFVW6SCoc9HyWYWqmmV8MoZ0MwiArlv2-I8n8tnOmXpX3b1KQ8Ghy4RyIsXbJWsVLMaqksX249JeXjTB_7LL4Mk",
+    "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjG_ejvxUh-oKppFX3KKFTZwVQUCfLUedr9Qgf6WJp3UZmJSSAuNKBxJAZiat9iOz8YEu0A2mCZdKtf5R315o_L8BAbQhk6FHS-Lgela3JSM-45RMf-giXaOCPzyzBVeJoDPYxymI1wvy0B2e9VlYhRRq10xQl5bwmXTn7uLJ0PzEz3dBwJe6xoviXTt92asZJfvnquHQPQsFhi3hXKGGR-nZgDTdtSZh5hJlbWAjh9P3aNi988uqmhMZAQyvcZkM3EQoAy8cwxn5P",
+    "mapAddress": "Wimbledon, London SW19 5AE, United Kingdom",
+    "featured": false,
+    "category": "Sports",
+    "company": "Nexus Events Group",
+    "companyRating": "4.9",
+    "companyTier": "Tier 1 Agency",
+    "companyImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+    "companyBio": "Nexus is a premier global event production firm known for high-tech innovation summits and luxury brand launches.",
+    "tagline": "Power exclusive corporate suites and VIP lounges at the world's most prestigious tennis championship.",
+    "vision": "Power the exclusive corporate suites and VIP lounges at the world's most prestigious tennis championship. We require high-end mixologists, hospitality managers, and customer service hosts. Clean styling, professional etiquette, and experience in high-end luxury settings are mandatory.",
+    "responsibilities": [
+      "Provide premium table service for corporate executives.",
+      "Prepare custom curated cocktails and high-end drinks.",
+      "Ensure safety and check credential entries in the suites."
+    ],
+    "positions": [
+      {
+        "title": "VIP Host",
+        "description": "Provide premium table service and guest care for corporate executives and VIP attendees.",
+        "rate": "£280",
+        "rateUnit": "Day",
+        "openings": 8
+      },
+      {
+        "title": "Lead Mixologist",
+        "description": "Prepare custom curated cocktails and high-end drinks for VIP lounge guests.",
+        "rate": "£320",
+        "rateUnit": "Day",
+        "openings": 4
+      },
+      {
+        "title": "VIP Security Escort",
+        "description": "Check credential entries, guide VIP movement, and maintain safety across the suites.",
+        "rate": "£260",
+        "rateUnit": "Day",
+        "openings": 8
+      }
+    ],
+    "otherEvents": [
+      { "title": "Global Tech Summit 2024", "category": "Technology", "city": "London", "slug": "global-tech-summit", "daysAway": "Starts soon" },
+      { "title": "Medical Innovators Forum", "category": "Medical", "city": "Chicago", "slug": "medical-innovators-forum", "daysAway": "Upcoming" }
+    ]
+  },
+  {
+    "title": "Medical Innovators Forum",
+    "slug": "medical-innovators-forum",
+    "subTitle": "MedTech Global Congress",
+    "city": "Chicago, IL",
+    "venue": "McCormick Place",
+    "address": "McCormick Place, 2301 S King Dr, Chicago, IL 60616",
+    "date": "Dec 1-4, 2024",
+    "startDate": "Dec 1, 2024",
+    "duration": "4 Days",
+    "contractType": "Shift Work",
+    "staffNeeded": "10 Members",
+    "rate": "$32.00",
+    "tags": ["Customer Support", "Organization", "Active Communication"],
+    "skills": ["Customer Support", "Organization", "Active Communication"],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCI8jzy0ZzgIdr5NtY1HT-XyFw9xK_6j1uAw7STI1No9RCGUfBlJJpm_NaYRyPqnjmyfXqmz-5idBq8HKvw0rKAH7tPBW30bTeiPDpmIz4AS38uw_HGfZlg7jKDA6b1OkC8uP7M0ouBrYM1XWabnRBtbvcKxc_ar3f-lmXVFQ05f8jxxDUAZ_ERv8RC5ZWwFnuke-84wCPt5p8hMYyVUyN4WITpaFb9hEr5VVRzsBU2oYcNH7xku2fJ2HfN4C1LXXJT6CKGGmD5rWng",
+    "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBIE6eAv8nYBkmPT5uDN8Itf-CU9uHyzOrSVYgBoR7MTecL3Fd5xhw89CnRdESF4msam3OmvpFCrqt38bF3_NnypjM3eaIn5c_326pUVX1AvcGeNjBCr42mQF3nNpdTNxIe2I-Bmcj1-l1AFQlArAUMamGzwubUh09E-WjZrMQoGznYp1wfALilO5VamL0VkkZcpq-CmcEZfpT1x2Za5HBqJlVBXT6kIzPsEPovsTWV5rX2lrhBZSCF2--IFEphI4KDMOUpkCprqGzU",
+    "mapAddress": "McCormick Place, 2301 S King Dr, Chicago, IL 60616",
+    "featured": false,
+    "category": "Medical",
+    "company": "Nexus Events Group",
+    "companyRating": "4.9",
+    "companyTier": "Tier 1 Agency",
+    "companyImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80",
+    "companyBio": "Nexus is a premier global event production firm known for high-tech innovation summits and luxury brand launches.",
+    "tagline": "Support thousands of global medical professionals and delegates at a major MedTech congress.",
+    "vision": "Join our crew at the Medical Innovators Forum. Work as a registration specialist, director, or usher supporting thousands of global medical professionals and delegates. Friendly customer service and comfort standing for long shifts are key.",
+    "responsibilities": [
+      "Verify credentials and check-in attendees.",
+      "Direct crowd flow in the main seminar hall.",
+      "Answer FAQs at the centralized help desk."
+    ],
+    "positions": [
+      {
+        "title": "Registration Specialist",
+        "description": "Verify credentials, check in attendees, print badges, and support delegate questions.",
+        "rate": "$220",
+        "rateUnit": "Day",
+        "openings": 4
+      },
+      {
+        "title": "Lead Usher",
+        "description": "Direct crowd flow in the main seminar hall and help attendees move between sessions.",
+        "rate": "$240",
+        "rateUnit": "Day",
+        "openings": 3
+      },
+      {
+        "title": "Info Desk Agent",
+        "description": "Answer FAQs at the centralized help desk and provide friendly delegate support.",
+        "rate": "$210",
+        "rateUnit": "Day",
+        "openings": 3
+      }
+    ],
+    "otherEvents": [
+      { "title": "Global Tech Summit 2024", "category": "Technology", "city": "London", "slug": "global-tech-summit", "daysAway": "Starts soon" },
+      { "title": "Wimbledon VIP Lounge", "category": "Sports", "city": "London", "slug": "wimbledon-vip-lounge", "daysAway": "Upcoming" }
+    ]
+  }
+]
