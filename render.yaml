@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: crew-connect-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_URL
+        sync: false
+
+  - type: web
+    name: crew-connect-frontend
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://crew-connect-backend.onrender.com
