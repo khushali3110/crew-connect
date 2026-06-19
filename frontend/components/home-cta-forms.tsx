@@ -75,6 +75,12 @@ export function HomeCtaForms() {
         })
       });
 
+      const contentType = response.headers.get("content-type") ?? "";
+
+      if (!contentType.includes("application/json")) {
+        throw new Error("Backend is not running on port 3000. Please run npm run dev:all again.");
+      }
+
       const result = await response.json();
 
       if (!response.ok || !result.success) {
