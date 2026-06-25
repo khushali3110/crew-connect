@@ -1,5 +1,5 @@
-const currentBackendUrl = "https://codecraften.onrender.com";
-const oldBackendUrls = ["https://crew-connect1.onrender.com", "https://crew-connect-backend.onrender.com"];
+const currentBackendUrl = "https://crew-connect1.onrender.com";
+const oldBackendUrls = ["https://codecraften.onrender.com", "https://crew-connect-backend.onrender.com"];
 
 export function getBackendBaseUrl() {
   const configuredUrl = process.env.NEXT_PUBLIC_API_URL ?? currentBackendUrl;
