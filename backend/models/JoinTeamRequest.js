@@ -15,6 +15,22 @@ const joinTeamRequestSchema = new mongoose.Schema(
         message: "First name must contain letters only"
       }
     },
+    phoneNumber: {
+      type: String,
+      required: true,
+      trim: true,
+      validate: {
+        validator(value) {
+          return /^\d{10,12}$/.test(value);
+        },
+        message: "Phone number must be 10 to 12 digits"
+      }
+    },
+    gender: {
+      type: String,
+      required: true,
+      enum: ["Male", "Female", "Other"]
+    },
     yearsExperience: {
       type: String,
       required: true,
@@ -53,9 +69,23 @@ const joinTeamRequestSchema = new mongoose.Schema(
       type: String,
       trim: true
     },
+    photoContentType: {
+      type: String,
+      trim: true
+    },
+    photoData: {
+      type: String
+    },
     cvFileName: {
       type: String,
       trim: true
+    },
+    cvContentType: {
+      type: String,
+      trim: true
+    },
+    cvData: {
+      type: String
     },
     pageUrl: {
       type: String,

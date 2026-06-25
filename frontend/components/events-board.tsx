@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Bookmark, CalendarDays, CheckCircle2, Clock3, MapPin, Search } from "lucide-react";
-import { useEffect, useState, type FormEvent } from "react";
+import { useCallback, useEffect, useState, type FormEvent } from "react";
 import type { EventItem } from "@/lib/types";
 
 const historyKey = "crew-connect-event-search-history";
@@ -19,32 +19,7 @@ export function EventsBoard({ initialEvents }: { initialEvents: EventItem[] }) {
     window.localStorage.removeItem(historyKey);
   }, []);
 
-  useEffect(() => {
-    const controller = new AbortController();
-    const timer = window.setTimeout(() => {
-      searchEvents(query, location, controller.signal);
-    }, 300);
-
-    return () => {
-      window.clearTimeout(timer);
-      controller.abort();
-    };
-  }, [query, location]);
-
-  useEffect(() => {
-    if (!events.length) {
-      setSelectedEvent(null);
-      return;
-    }
-
-    const selectedStillVisible = selectedEvent ? events.some((event) => event.title === selectedEvent.title) : false;
-
-    if (!selectedStillVisible) {
-      setSelectedEvent(events[0]);
-    }
-  }, [events, selectedEvent]);
-
-  async function searchEvents(nextQuery: string, nextLocation: string, signal?: AbortSignal) {
+  const searchEvents = useCallback(async (nextQuery: string, nextLocation: string, signal?: AbortSignal) => {
     const trimmedQuery = nextQuery.trim();
     const trimmedLocation = nextLocation.trim();
     const params = new URLSearchParams();
@@ -75,7 +50,32 @@ export function EventsBoard({ initialEvents }: { initialEvents: EventItem[] }) {
         setIsLoading(false);
       }
     }
-  }
+  }, [initialEvents]);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      searchEvents(query, location, controller.signal);
+    }, 300);
+
+    return () => {
+      window.clearTimeout(timer);
+      controller.abort();
+    };
+  }, [query, location, searchEvents]);
+
+  useEffect(() => {
+    if (!events.length) {
+      setSelectedEvent(null);
+      return;
+    }
+
+    const selectedStillVisible = selectedEvent ? events.some((event) => event.title === selectedEvent.title) : false;
+
+    if (!selectedStillVisible) {
+      setSelectedEvent(events[0]);
+    }
+  }, [events, selectedEvent]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();

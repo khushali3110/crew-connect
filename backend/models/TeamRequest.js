@@ -39,9 +39,9 @@ const teamRequestSchema = new mongoose.Schema(
       trim: true,
       validate: {
         validator(value) {
-          return /^\d{12}$/.test(value);
+          return /^\d{10,12}$/.test(value);
         },
-        message: "Phone number must contain exactly 12 digits"
+        message: "Phone number must be 10 to 12 digits"
       }
     },
     location: {

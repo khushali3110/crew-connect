@@ -7,7 +7,8 @@ import { useState } from "react";
 const nav = [
   ["Events", "/industries"],
   ["Services", "/about"],
-  ["Contact", "/contact"]
+  ["Contact", "/contact"],
+  ["Admin", "/admin"]
 ];
 
 export function Header() {

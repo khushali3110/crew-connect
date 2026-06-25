@@ -5,6 +5,8 @@ import { BriefcaseBusiness, Building2, Upload, X } from "lucide-react";
 
 type ModalType = "join" | "request" | null;
 type SubmitStatus = "idle" | "loading" | "success" | "error";
+type JoinFileKey = "photo" | "cv";
+type JoinFiles = Record<JoinFileKey, { name: string; contentType: string; data: string }>;
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
 
@@ -18,21 +20,37 @@ export function HomeCtaForms() {
   const [activeModal, setActiveModal] = useState<ModalType>(null);
   const [status, setStatus] = useState<SubmitStatus>("idle");
   const [message, setMessage] = useState("");
-  const [joinFiles, setJoinFiles] = useState({ photo: "", cv: "" });
+  const [joinFiles, setJoinFiles] = useState<JoinFiles>(getEmptyJoinFiles());
 
   function closeModal() {
     if (status === "loading") return;
     setActiveModal(null);
     setStatus("idle");
     setMessage("");
-    setJoinFiles({ photo: "", cv: "" });
+    setJoinFiles(getEmptyJoinFiles());
   }
 
-  function handleFileChange(key: "photo" | "cv") {
-    return (event: ChangeEvent<HTMLInputElement>) => {
+  function handleFileChange(key: JoinFileKey) {
+    return async (event: ChangeEvent<HTMLInputElement>) => {
+      const file = event.target.files?.[0];
+
+      if (!file) {
+        setJoinFiles((current) => ({
+          ...current,
+          [key]: { name: "", contentType: "", data: "" }
+        }));
+        return;
+      }
+
+      const data = await readFileAsBase64(file);
+
       setJoinFiles((current) => ({
         ...current,
-        [key]: event.target.files?.[0]?.name ?? ""
+        [key]: {
+          name: file.name,
+          contentType: file.type || "application/octet-stream",
+          data
+        }
       }));
     };
   }
@@ -68,8 +86,12 @@ export function HomeCtaForms() {
           ...payload,
           ...(type === "join"
             ? {
-                photoFileName: joinFiles.photo,
-                cvFileName: joinFiles.cv
+                photoFileName: joinFiles.photo.name,
+                photoContentType: joinFiles.photo.contentType,
+                photoData: joinFiles.photo.data,
+                cvFileName: joinFiles.cv.name,
+                cvContentType: joinFiles.cv.contentType,
+                cvData: joinFiles.cv.data
               }
             : {})
         })
@@ -88,7 +110,7 @@ export function HomeCtaForms() {
       }
 
       form.reset();
-      setJoinFiles({ photo: "", cv: "" });
+      setJoinFiles(getEmptyJoinFiles());
       setStatus("success");
       setMessage("Submitted successfully.");
     } catch (error) {
@@ -161,6 +183,17 @@ export function HomeCtaForms() {
                 <Field label="First Name">
                   <input name="firstName" required onChange={handleLettersChange} placeholder="First name" className={inputClass} />
                 </Field>
+                <Field label="Phone Number">
+                  <input name="phoneNumber" required inputMode="numeric" pattern="\d{10,12}" minLength={10} maxLength={12} onChange={handleNumberChange(12)} placeholder="+91 9876543210" className={inputClass} />
+                </Field>
+                <Field label="Gender">
+                  <select name="gender" required className={selectClass} defaultValue="">
+                    <option className="bg-white text-base text-ink" value="" disabled>Select gender</option>
+                    <option className="bg-white text-base text-ink" value="Male">Male</option>
+                    <option className="bg-white text-base text-ink" value="Female">Female</option>
+                    <option className="bg-white text-base text-ink" value="Other">Other</option>
+                  </select>
+                </Field>
                 <Field label="Years Experience">
                   <input name="yearsExperience" required type="text" inputMode="numeric" pattern="\d{1,2}" onChange={handleYearsChange} placeholder="3" className={inputClass} />
                 </Field>
@@ -170,8 +203,8 @@ export function HomeCtaForms() {
                 <Field label="Pincode">
                   <input name="pincode" required inputMode="numeric" pattern="\d{6,7}" minLength={6} maxLength={7} onChange={handlePincodeChange} placeholder="400001" className={inputClass} />
                 </Field>
-                <FileField label="Upload Photo" name="photo" fileName={joinFiles.photo} onChange={handleFileChange("photo")} />
-                <FileField label="Upload CV" name="cv" fileName={joinFiles.cv} onChange={handleFileChange("cv")} />
+                <FileField label="Upload Photo" name="photo" fileName={joinFiles.photo.name} onChange={handleFileChange("photo")} />
+                <FileField label="Upload CV" name="cv" fileName={joinFiles.cv.name} onChange={handleFileChange("cv")} />
                 <SubmitArea status={status} message={message} label="Submit Join Team Form" />
               </form>
             ) : (
@@ -191,7 +224,7 @@ export function HomeCtaForms() {
                   <input name="personName" required onChange={handleLettersChange} placeholder="Contact person" className={inputClass} />
                 </Field>
                 <Field label="Phone Number">
-                  <input name="phoneNumber" required inputMode="numeric" pattern="\d{12}" minLength={12} maxLength={12} onChange={handleNumberChange(12)} placeholder="919876543210" className={inputClass} />
+                  <input name="phoneNumber" required inputMode="numeric" pattern="\d{10,12}" minLength={10} maxLength={12} onChange={handleNumberChange(12)} placeholder="+91 9876543210" className={inputClass} />
                 </Field>
                 <Field label="Location">
                   <input name="location" required onChange={handleLettersChange} placeholder="Venue area" className={inputClass} />
@@ -219,6 +252,26 @@ export function HomeCtaForms() {
       ) : null}
     </>
   );
+}
+
+function getEmptyJoinFiles(): JoinFiles {
+  return {
+    photo: { name: "", contentType: "", data: "" },
+    cv: { name: "", contentType: "", data: "" }
+  };
+}
+
+function readFileAsBase64(file: File) {
+  return new Promise<string>((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      const result = String(reader.result ?? "");
+      resolve(result.includes(",") ? result.split(",")[1] : result);
+    };
+    reader.onerror = () => reject(new Error("Unable to read selected file."));
+    reader.readAsDataURL(file);
+  });
 }
 
 function Field({ label, children }: { label: string; children: ReactNode }) {

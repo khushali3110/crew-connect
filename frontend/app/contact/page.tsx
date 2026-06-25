@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Mail, MapPin, Phone, RefreshCw, UserRoundCheck, Video } from "lucide-react";
 
@@ -83,10 +84,12 @@ export function ContactContent({ role, sector }: { role?: string; sector?: strin
             </Link>
           </div>
           <div className="relative min-h-[300px] overflow-hidden rounded-lg bg-ink/10 shadow-soft sm:h-[320px] lg:h-[360px]">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1534237710431-e2fc698436d0?auto=format&fit=crop&w=1200&q=80"
               alt="Los Angeles operations map"
-              className="h-full w-full object-cover"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <div className="absolute bottom-4 left-4 right-4 rounded-lg bg-white/92 p-4">
               <h3 className="font-black">Find us in LA</h3>

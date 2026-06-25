@@ -58,10 +58,10 @@ export default function AboutPage() {
               Born in the heart of the tech hub, Crew Connect was founded by veterans of the event management world. We saw the need for an event organization team that could seamlessly execute its own global summits with unparalleled precision and elite talent.
             </p>
             <p className="mt-4 leading-8 text-slateblue">
-              We don't just organize events; we produce masterpieces. Today, we empower specialized professionals, from lighting technicians to premium hospitality staff, to experience the prestige of joining our crew and working within our world-class event portfolio.
+              We don&apos;t just organize events; we produce masterpieces. Today, we empower specialized professionals, from lighting technicians to premium hospitality staff, to experience the prestige of joining our crew and working within our world-class event portfolio.
             </p>
             <blockquote className="mt-8 border-l-4 border-aqua pl-5 text-xl font-black leading-8">
-              "Our mission is to staff our own global summits with elite talent, bringing our productions to life with unforgettable precision."
+              &quot;Our mission is to staff our own global summits with elite talent, bringing our productions to life with unforgettable precision.&quot;
             </blockquote>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
@@ -112,7 +112,7 @@ export default function AboutPage() {
           <div>
             <h2 className="fluid-section-title font-black">Uncompromising Trust.</h2>
             <p className="mt-4 max-w-2xl leading-8 text-white/70">
-              Safety isn't a feature; it's our foundation. Every crew member undergoes a multi-step verification process including background checks, skill assessments, and face-to-face interviews.
+              Safety isn&apos;t a feature; it&apos;s our foundation. Every crew member undergoes a multi-step verification process including background checks, skill assessments, and face-to-face interviews.
             </p>
           </div>
           <div className="grid gap-3">
