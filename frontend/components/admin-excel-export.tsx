@@ -1,6 +1,7 @@
 "use client";
 
 import { Download } from "lucide-react";
+import { getBackendBaseUrl } from "@/lib/backend-url";
 import type { JoinTeamRequest, TeamRequest } from "@/lib/types";
 
 type ExcelLinkCell = {
@@ -9,7 +10,6 @@ type ExcelLinkCell = {
 };
 type ExcelCell = string | number | boolean | ExcelLinkCell | null | undefined;
 type ExcelRow = ExcelCell[];
-const fallbackBackendUrl = "https://crew-connect1.onrender.com";
 
 export function AdminExcelExport({ joinRequests, teamRequests }: { joinRequests: JoinTeamRequest[]; teamRequests: TeamRequest[] }) {
   function downloadExcel() {
@@ -184,7 +184,7 @@ function createFileCell(id: string, fileName: string | null | undefined, type: "
 }
 
 function createFileLink(id: string, type: "photo" | "cv") {
-  const baseUrl = (process.env.NEXT_PUBLIC_API_URL ?? fallbackBackendUrl).replace(/\/$/, "");
+  const baseUrl = getBackendBaseUrl();
 
   return `${baseUrl}/api/join-team/${id}/${type}`;
 }

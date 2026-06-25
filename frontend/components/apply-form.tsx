@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { getBackendBaseUrl } from "@/lib/backend-url";
 
 type ApplyFormProps = {
   roles: string[];
@@ -8,7 +9,7 @@ type ApplyFormProps = {
   eventSlug?: string;
 };
 
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
+const apiBaseUrl = getBackendBaseUrl();
 
 export function ApplyForm({ roles, eventTitle, eventSlug }: ApplyFormProps) {
   const [fullName, setFullName] = useState("");

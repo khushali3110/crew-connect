@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import { getBackendBaseUrl } from "@/lib/backend-url";
 import type { ApiListResponse, EventItem, IndustryItem, JoinTeamRequest, TeamRequest } from "@/lib/types";
 
 function getBaseUrl() {
@@ -25,10 +26,6 @@ export function getEvents() {
 
 export function getIndustries() {
   return fetchJson<IndustryItem[]>("/api/industries");
-}
-
-function getBackendBaseUrl() {
-  return process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
 }
 
 async function fetchBackendJson<T>(path: string): Promise<T> {

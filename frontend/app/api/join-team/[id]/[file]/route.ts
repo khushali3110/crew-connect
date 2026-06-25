@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 
-const fallbackBackendUrls = ["https://crew-connect1.onrender.com", "https://crew-connect-backend.onrender.com", "http://localhost:3000"];
+const fallbackBackendUrls = ["https://codecraften.onrender.com", "https://crew-connect1.onrender.com", "https://crew-connect-backend.onrender.com", "http://localhost:3000"];
 
 export async function GET(_request: Request, { params }: { params: { id: string; file: string } }) {
   if (params.file !== "photo" && params.file !== "cv") {

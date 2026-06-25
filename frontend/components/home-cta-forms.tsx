@@ -2,13 +2,14 @@
 
 import { useState, type ChangeEvent, type FormEvent, type ReactNode } from "react";
 import { BriefcaseBusiness, Building2, Upload, X } from "lucide-react";
+import { getBackendBaseUrl } from "@/lib/backend-url";
 
 type ModalType = "join" | "request" | null;
 type SubmitStatus = "idle" | "loading" | "success" | "error";
 type JoinFileKey = "photo" | "cv";
 type JoinFiles = Record<JoinFileKey, { name: string; contentType: string; data: string }>;
 
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000";
+const apiBaseUrl = getBackendBaseUrl();
 
 const inputClass =
   "w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/55 focus:border-aqua focus:bg-white/15 focus:ring-2 focus:ring-aqua/25";
