@@ -18,8 +18,8 @@ export default async function AdminDashboardPage() {
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-aqua">Admin Dashboard</p>
-            <h1 className="mt-3 text-3xl font-black text-ink sm:text-4xl">Form Submissions</h1>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-aqua">Dashboard</p>
+            <h1 className="mt-3 text-3xl font-black text-ink sm:text-4xl">Dashboard</h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slateblue">
               All home page form submissions are shown here. Join Team and Req Team data are separated for quick checking.
             </p>
